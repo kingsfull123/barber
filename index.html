@@ -5,183 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber shop</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3ca10d6b55.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- Navigation -->
-    <div class="navigation">
-      <div class="nav-info">
-        <span class="nav-info--address"> 6-10 OLD PRINCESS HIGHWAY, BEACONSFIELD VIC</span>
-        <span class="nav-info--bookonline"><i class="far fa-clock"></i>BOOK ONLINE CLICK HERE</span>
-        <span class="nav-info--call"><i class="fas fa-phone-volume"></i> CALL US ON: (03) 8752 2005</span>
-      </div>
-      <div class="nav--wrapper">
-        <ul class="nav">
+      
+  <!-- Navigation -->
+    <nav class="navbar-container">
+      <ul class="info-container">
+        <li class="info-third"></p>
+          <i class="fas fa-map-marker-alt"></i> 6-10 OLD PRINCESS HIGHWAY, BEACONSFIELD VIC
+        </li>
+        <li class="info-third"><i class="far fa-clock"></i> BOOK ONLINE CLICK HERE</li>
+        <li class="info-third"><i class="fas fa-phone-alt"></i> CALL US ON: (03) 8752 2005</li>
+      </ul>
+      <ul class='navigation'>
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
-          <li><a href="">Services & Pricing</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Contact us</a></li>
-        </ul>
+          <li><a href="">Servicing & price</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Contact</a></li>
+      </ul>
+      <div class="burger-icon-container">
+        <i class="fas fa-bars"></i>
       </div>
-    </div>
+    </nav>
 
     <!-- Hero -->
-    <div class="hero">
-      <img class="hero--logo" src="./images/logo.png" alt="logo" />
-      <img class="hero--backgroundimage" src="./images/hero.jpg" alt="hero" />
-      <div class="hero--layer"></div>
+    <div class="hero-container">
+      <picture class="hero-image">
+        <source class="hero-image" srcset="./images/hero-larger.jpg" media="(min-width: 1035px)" />
+        <source class="hero-image" srcset="./images/hero-large.jpg" media="(min-width: 960px)" />
+        <source class="hero-image" srcset="./images/hero-medium.jpg" media="(min-width: 740px)" />
+        <img src="./images/hero-small.jpg" alt="hero" class="hero-image" />
+      </picture>
+      <div class="logo-container">
+        <img src="./images/logo.png" alt="logo" class="logo" />
+      </div>
+      <div class="hero-overlay"></div>
     </div>
 
     <!-- About -->
     <div class="about">
-      <div class="about--img-wrapper">
-        <img src="./images/about-us.jpg" alt="about" />
+      <div class="about-upper">
+        <div class="about-img-wrapper">
+          <picture>
+            <source srcset='./images/about-us-large.jpg' media='(min-width:1360px )'>
+            <source srcset='./images/about-us-medium.jpg' media='(min-width:1160px)'>
+            <img src="./images/about-us-small.jpg" alt="about-us">
+          </picture>
+        </div>
+        <div class="about-text-container ">
+          <div class="generic-text-wrapper">
+            <h3 class="about-title">About us</h3>
+            <p>Cooper & Co Barber Shop – where classic barbering meets the modern-day man.</p>
+            <p>
+              You’ll come in for the clean fades, close shaves and in style trends but, you’ll stay for the
+              relaxed vibe, chilled beer and great music.
+            </p>
+            <p>
+              You’ll come in for the clean fades, close shaves and in style trends but, you’ll stay for the
+              relaxed vibe, chilled beer and great music.
+            </p>
+            <p>
+              From a specialized cut and style to a quick short back and sides, our highly experienced team of
+              Barbers understand your needs and men’s hair like no one else.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="about--text-wrapper">
-        <h3 class="about--title">About us</h3>
-        <p>Cooper & Co Barber Shop – where classic barbering meets the modern-day man.</p>
-        <p>
-          You’ll come in for the clean fades, close shaves and in style trends but, you’ll stay for the
-          relaxed vibe, chilled beer and great music.
-        </p>
-        <p>
-          You’ll come in for the clean fades, close shaves and in style trends but, you’ll stay for the
-          relaxed vibe, chilled beer and great music.
-        </p>
-        <p>
-          From a specialized cut and style to a quick short back and sides, our highly experienced team of
-          Barbers understand your needs and men’s hair like no one else.
-        </p>
-      </div>
+      
       <div class="about-quote">
         <p>
-          "Amazing! Would love to put before and after pics. Went in for a beard trim and haircut. One happy
+          "Amazing! Would lover a beard trim and haircut. <br />One happy to put before and after pics.<br /> Went in fo
           customer."
         </p>
       </div>
     </div>
 
     <!-- Services & Pricing -->
-    <div class="services--wrapper">
-      <h3 class="services--title">Services & Pricing</h3>
-      <p class="services--text">
+    <div class="services page-section">
+      <h3 class="services-title">Services & Pricing</h3>
+      <p class="services-text">
         Here at Cooper & Co, we provide all the traditional services with a modern twist. From the hot towel
         and razor head and face shave, to a sharp looking fade, we can do it all. Check out our pricing below
       </p>
-      <div class="services--basics">
-        <h4>Mens’s Prices</h4>
-        <dl>
-          <dt>Standard</dt>
-          <dd>$27.00</dd>
-          <dt>Fade</dt>
-          <dd>$32.00</dd>
-          <dt>Skin Fade</dt>
-          <dd>from $40.00</dd>
-          <dt>Flat Top</dt>
-          <dd>$from $30.00</dd>
-          <dt>Back And Sides</dt>
-          <dd>$18.00</dd>
-          <dt>Buzz Cut</dt>
-          <dd>$18.00</dd>
-          <dt>Restyle</dt>
-          <dd>$from $35.00</dd>
-        </dl>
-        <h4>SHAVES & BEARDS</h4>
-        <dl>
-          <dt>Beard Trim Only</dt>
-          <dd>from $15.00</dd>
-          <dt>Beard Trim With Service</dt>
-          <dd>$10.00</dd>
-          <dt>Cut Throat</dt>
-          <dd>From $35.00</dd>
-          <dt>Beard Style With Service</dt>
-          <dd>$15.00</dd>
-          <dt>Beard Style Only</dt>
-          <dd>$20.00</dd>
-        </dl>
-      </div>
-      <div class="services--styles">
-        <h4>Kids</h4>
-        <dl>
-          <dt>0-12yrs</dt>
-          <dd>$20.00</dd>
-          <dt>13-16yrs</dt>
-          <dd>$25.00</dd>
-          <dt>Restyle & Fade</dt>
-          <dd>$from $28.00</dd>
-        </dl>
-        <h4>Kids - Saturday</h4>
-        <dl>
-          <dt>0-12yrs</dt>
-          <dd>$25.00</dd>
-          <dt>13-16yrs</dt>
-          <dd>$27.00</dd>
-          <dt>Restyle & Fade</dt>
-          <dd>from $30.00</dd>
-        </dl>
-        <dl>
-          <h4>Colour & Wash</h4>
-          <dt>Colour</dt>
-          <dd>$45.00</dd>
-          <dt>Hair Wash</dt>
-          <dd>$10.00</dd>
-        </dl>
-        <dl>
-          <h4>Pensioner</h4>
-          <h4>Monday to Wednesday - to 3.00PM</h4>
-          <dt>Haircut</dt>
-          <dd>$16.00</dd>
-          <dt>Hair And Beard</dt>
-          <dd>$20.00</dd>
-          <dt>Beard Only</dt>
-          <dd>$10.00</dd>
-        </dl>
-        <dl>
-          <h4>Pensioner</h4>
-          <h4>Tursday - Friday to 3.00PM</h4>
-          <dt>Haircut</dt>
-          <dd>$20.00</dd>
-          <dt>Hair And Beard</dt>
-          <dd>$25.00</dd>
-          <dt>Beard Only</dt>
-          <dd>$12.00</dd>
-        </dl>
+      <div class="services-wrapper">
+        <div class="services-basics">
+          <h4 class='services-subtitle'>Mens’s Prices</h4>
+          <dl>
+            <dt>Standard</dt>
+            <dd>$27.00</dd>
+            <dt>Fade</dt>
+            <dd>$32.00</dd>
+            <dt>Skin Fade</dt>
+            <dd>from $40.00</dd>
+            <dt>Flat Top</dt>
+            <dd>from $30.00</dd>
+            <dt>Back And Sides</dt>
+            <dd>$18.00</dd>
+            <dt>Buzz Cut</dt>
+            <dd>$18.00</dd>
+            <dt>Restyle</dt>
+            <dd>from $35.00</dd>
+          </dl>
+          <h4 class='services-subtitle'>SHAVES & BEARDS</h4>
+          <dl>
+            <dt>Beard Trim Only</dt>
+            <dd>from $15.00</dd>
+            <dt>Beard Trim With Service</dt>
+            <dd>$10.00</dd>
+            <dt>Cut Throat</dt>
+            <dd>From $35.00</dd>
+            <dt>Beard Style With Service</dt>
+            <dd>$15.00</dd>
+            <dt>Beard Style Only</dt>
+            <dd>$20.00</dd>
+          </dl>
+        </div>
+        <div class="services-styles">
+          <h4 class='services-subtitle'>Kids</h4>
+          <dl>
+            <dt>0-12yrs</dt>
+            <dd>$20.00</dd>
+            <dt>13-16yrs</dt>
+            <dd>$25.00</dd>
+            <dt>Restyle & Fade</dt>
+            <dd>from $28.00</dd>
+          </dl>
+          <h4 class='services-subtitle'>Kids - Saturday</h4>
+          <dl>
+            <dt>0-12yrs</dt>
+            <dd>$25.00</dd>
+            <dt>13-16yrs</dt>
+            <dd>$27.00</dd>
+            <dt>Restyle & Fade</dt>
+            <dd>from $30.00</dd>
+          </dl>
+          <dl>
+            <h4 class='services-subtitle'>Colour & Wash</h4>
+            <dt>Colour</dt>
+            <dd>$45.00</dd>
+            <dt>Hair Wash</dt>
+            <dd>$10.00</dd>
+          </dl>
+          <dl>
+            <h4 class='services-subtitle'>Pensioner</h4>
+            <h4>Monday to Wednesday - to 3.00PM</h4>
+            <dt>Haircut</dt>
+            <dd>$16.00</dd>
+            <dt>Hair And Beard</dt>
+            <dd>$20.00</dd>
+            <dt>Beard Only</dt>
+            <dd>$10.00</dd>
+          </dl>
+          <dl>
+            <h4 class='services-subtitle'>Pensioner</h4>
+            <h4 class='services-subtitle'>Tursday - Friday to 3.00PM</h4>
+            <dt>Haircut</dt>
+            <dd>$20.00</dd>
+            <dt>Hair And Beard</dt>
+            <dd>$25.00</dd>
+            <dt>Beard Only</dt>
+            <dd>$12.00</dd>
+          </dl>
+        </div>
       </div>
     </div>
 
     <!-- Products -->
-    <div class="products-wrapper">
-      <div class="products--image-container">
+    <div class="products-wrapper page-section">
+      <div class="products-image-container">
         <img src="./images/products.jpg" alt="products" class="products-img" />
       </div>
-      <div class="products--text-container">
-        <h3 class="products--title">Product</h3>
-        <p class="products--text">
+      <div class="products-text-container">
+        <h3 class="products-title">Product</h3>
+        <p class="products-text">
           Here at Cooper & Co Barber Shop, we only used the best products to ensure quality shaves and a sharp
           finish to any hairstyle. We also sell a range of the products and tools we use such as;
         </p>
-        <ul class="products--listing">
-          <li class="products--item">
+        <ul class="products-listing">
+          <li class="products-item">
             <span><i class="fas fa-arrow-circle-right"></i>American Crew</span>
           </li>
-          <li class="products--item">
+          <li class="products-item">
             <span><i class="fas fa-arrow-circle-right"></i>The Italian brand “Proraso” product range</span>
           </li>
-          <li class="products--item">
+          <li class="products-item">
             <span><i class="fas fa-arrow-circle-right"></i>Shave Cream and Oils</span>
           </li>
-          <li class="products--item">
+          <li class="products-item">
             <span><i class="fas fa-arrow-circle-right"></i>After shave lotions and creams</span>
           </li>
-          <li class="products--item">
+          <li class="products-item">
             <span><i class="fas fa-arrow-circle-right"></i>Beard oil and wax</span>
           </li>
-          <li class="products--item">
+          <li class="products-item">
             <span><i class="fas fa-arrow-circle-right"></i>Shave brushes and blades</span>
           </li>
         </ul>
-        <p class="products--text">
+        <p class="products-text">
           If you are unsure what product is best for you, feel free to have a chat to our friendly staff who
           will be able to assist you.
         </p>
