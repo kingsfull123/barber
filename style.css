@@ -405,6 +405,49 @@ dd {
 
 /* products */
 
+.products-container {
+  background-color: #eee;
+  float: left;
+  width: 100%;
+}
+
+.products-image-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.products-text-container {
+  width: 100%;
+  text-align: center;
+}
+
+.products-title {
+  font-size: 2.8rem;
+}
+
+.products-text {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 20px;
+  font-weight: light;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.products-listing {
+  padding: 20px;
+  font-weight: light;
+  color: rgba(0, 0, 0, 0.65);
+  list-style: none;
+}
+
+@media (min-width: 1100px) {
+  .products-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 /* Contact us */
 .map {
   width: 100%;
